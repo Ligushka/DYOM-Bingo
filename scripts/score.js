@@ -52,10 +52,13 @@ export const score = {
   //Increment "lose" score, display it and store it
   updateLost: () => {
     let scoreObj = score.get();
+	    let audio = new Audio("./sound/lose.wav");
+		
     scoreObj.lose++;
     document.getElementById("scoreString").innerText =
       "Score: " + scoreObj.win + "-" + scoreObj.lose;
 
+	audio.play();
     score.set(scoreObj);
   },
 };

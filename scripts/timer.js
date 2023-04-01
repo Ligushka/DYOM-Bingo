@@ -88,7 +88,7 @@ export const timer = {
         .padStart(2, "0");
 
       span.innerHTML +=
-        "<br />PB: " + +pbhrs + ":" + pbmins + ":" + pbsecs + "." + pbmils;
-    } else span.innerHTML += "<br />PB: Not set yet";
+        "<br>PB: " + +pbhrs + ":" + pbmins + ":" + pbsecs + "." + pbmils;
+    } else span.innerHTML += "<br>PB: Not set yet";
   },
 };
